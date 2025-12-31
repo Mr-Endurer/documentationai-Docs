@@ -1,0 +1,108 @@
+---
+title: Welcome to mwP Сoub
+description: An overview of mwP Сoub, a documentation management platform for organizing and managing project documentation spaces.
+---
+
+## Overview
+
+mwP Сoub helps you organize and manage all your project documentation in dedicated spaces. Create custom documentation hubs for teams, products, or clients with version control, search, and collaboration tools. You streamline knowledge sharing and reduce onboarding time across your projects.
+
+## Key Features
+
+mwP Сoub offers powerful tools to handle documentation at scale. Explore the core capabilities below.
+
+<Columns cols={3}>
+  <Card title="Documentation Spaces" icon="folder" href="/spaces">
+    Group related docs into isolated spaces. Assign permissions and track changes independently.
+  </Card>
+  <Card title="Real-time Collaboration" icon="users" href="/collaboration">
+    Edit docs simultaneously with teammates. See live changes and resolve conflicts effortlessly.
+  </Card>
+  <Card title="Advanced Search" icon="search" href="/search">
+    Find content instantly across spaces with full-text search and filters.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+  Start with a single space for your main project to experience these features immediately.
+</Callout>
+
+## Get Started in Minutes
+
+Follow these steps to create your first documentation space.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit `https://app.mwpcoub.com` and create your account with email or GitHub.
+  </Step>
+  <Step title="Create a Space" icon="plus">
+    Click "New Space" in the dashboard. Name it, like "Project Alpha Docs", and set visibility.
+  </Step>
+  <Step title="Add Your First Doc" icon="file-text">
+    Upload Markdown files or write directly. Use the editor for rich formatting.
+
+````mdx
+# Welcome to Project Alpha
+
+This is your first document.
+````
+
+  </Step>
+  <Step title="Invite Team" icon="mail">
+    Share the space link or add members via email. Set roles like Editor or Viewer.
+  </Step>
+</Steps>
+
+## Quick Navigation
+
+Jump to key sections of the documentation.
+
+<Columns cols={2}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Set up your first space and invite collaborators.
+  </Card>
+  <Card title="Authentication" icon="lock" href="/authentication">
+    Secure your spaces with API keys and OAuth.
+  </Card>
+  <Card title="Customization" icon="settings" href="/configuration">
+    Tailor themes and workflows to your needs.
+  </Card>
+  <Card title="Changelog" icon="git-branch" href="/changelog">
+    Stay updated with the latest releases.
+  </Card>
+</Columns>
+
+## Brand Guidelines
+
+Follow these guidelines to maintain consistency when customizing mwP Сoub.
+
+<Expandable title="Primary Brand Color" default-open="true">
+  Use the primary brand color `{ #3B82F6 }` for accents, buttons, and headers. It represents trust and professionalism.
+
+  <Image
+    src="https://via.placeholder.com/600x200/3B82F6/FFFFFF?text=Brand+Color+%233B82F6"
+    alt="mwP Сoub brand color swatch"
+    width="600"
+    height="200"
+  />
+</Expandable>
+
+<Expandable title="Usage Examples">
+  Apply the color in CSS:
+
+````css
+:root {
+  --brand-primary: #3B82F6;
+}
+
+.button {
+  background-color: var(--brand-primary);
+  color: white;
+}
+````
+
+</Expandable>
+
+<Callout kind="info">
+  Ready to dive deeper? Check the [Quickstart](/quickstart) guide next for hands-on setup.
+</Callout>

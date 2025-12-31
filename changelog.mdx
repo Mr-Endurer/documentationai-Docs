@@ -1,0 +1,142 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to mwP Сoub.
+---
+
+## Overview
+
+mwP Сoub releases updates regularly to add new features, fix bugs, and improve performance. You receive notifications via email and the dashboard at `https://dashboard.example.com`. Check this changelog to see what's new.
+
+<Callout kind="info">
+  Subscribe to our RSS feed or GitHub releases to stay informed about new versions.
+</Callout>
+
+## Recent Updates
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "bugfix"]}>
+
+## New Features
+
+- Added real-time collaboration for documentation pages, allowing multiple users to edit simultaneously.
+- Introduced webhook support for custom integrations. Configure at `https://dashboard.example.com/webhooks`.
+
+## Improvements
+
+- Enhanced search performance by `>50%` for large documentation spaces.
+- Updated UI with brand color `#3B82F6` for better visibility.
+
+## Bug Fixes
+
+- Fixed rendering issues with nested lists in MDX previews.
+- Resolved authentication errors when using `{API_KEY}` with special characters.
+
+**Backward Compatibility:** All changes are non-breaking. Update via `npm install mwp-сoub@latest`.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Custom themes support, including your brand color `#3B82F6`.
+- Export documentation to PDF or Markdown directly from the dashboard.
+
+## Improvements
+
+- Optimized database queries for `<100ms` response times.
+- Added keyboard shortcuts like `<kbd>Ctrl</kbd>+<kbd>S</kbd>` for quick saves.
+
+## Bug Fixes
+
+- Patched cross-site scripting vulnerability in user-generated content.
+- Fixed mobile layout glitches on documentation pages.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["breaking", "feature"]}>
+
+## New Features
+
+- Core documentation management with MDX support.
+- User authentication via `https://auth.example.com`.
+- API endpoints at `https://api.example.com/v1/docs`.
+
+## Breaking Changes
+
+- Migrated from v0.x config format. See migration guide below.
+
+## Initial Setup
+
+Install the CLI: `npm install -g mwp-сoub-cli`.
+
+</Update>
+
+## How to Upgrade
+
+Follow these steps to upgrade mwP Сoub safely.
+
+<Steps>
+  <Step title="Check Current Version" icon="package">
+
+    Run the version check:
+
+````bash
+npx mwp-сoub --version
+````
+
+  </Step>
+  <Step title="Backup Data" icon="database">
+
+    Export your documentation:
+
+    ```bash
+    mwp-сoub export --output=backup.json
+    ```
+
+  </Step>
+  <Step title="Install Latest" icon="download">
+
+    <CodeGroup tabs="npm,yarn">
+
+````bash
+npm install mwp-сoub@latest
+````
+
+````bash
+yarn add mwp-сoub@latest
+````
+
+    </CodeGroup>
+
+  </Step>
+  <Step title="Migrate Config" icon="settings">
+
+    Update your config file if needed:
+
+````json
+{
+  "apiUrl": "https://api.example.com",
+  "apiKey": "YOUR_API_KEY"
+}
+````
+
+  </Step>
+</Steps>
+
+<Callout kind="tip">
+  Test upgrades in a staging environment first. View full migration notes in the [release notes](https://github.com/mwp-сoub/releases).
+</Callout>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Quickstart" icon="rocket" href="/quickstart">
+    Get started with mwP Сoub in minutes.
+  </Card>
+  <Card title="API Reference" icon="code" href="/authentication">
+    Integrate via our API.
+  </Card>
+  <Card title="Support" icon="help-circle" href="/help-center">
+    Need help? Contact support.
+  </Card>
+</Columns>
